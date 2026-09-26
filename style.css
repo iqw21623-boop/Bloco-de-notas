@@ -510,3 +510,16 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; }
 }
+
+/* ---- Tabelas, código e barra contextual ---- */
+#note-body table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 0.6em 0; }
+#note-body td, #note-body th { border: 1px solid var(--line); padding: 8px 10px; min-width: 84px; vertical-align: top; }
+#note-body th { background: var(--surface-2); text-align: left; font-weight: 600; }
+#note-body pre { font-family: var(--mono); font-size: 0.86em; line-height: 1.5; background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin: 0.6em 0; white-space: pre; overflow-x: auto; tab-size: 2; }
+#note-body code { font-family: var(--mono); font-size: 0.88em; background: var(--surface-2); border-radius: 5px; padding: 1px 5px; }
+#note-body pre code { background: none; padding: 0; }
+.ctx-bar { position: fixed; left: 0; right: 0; bottom: calc(54px + var(--safe-bottom)); max-width: 560px; margin: 0 auto; display: flex; gap: 6px; padding: 6px 8px; background: var(--surface); border-top: 1px solid var(--line); overflow-x: auto; z-index: 8; }
+.ctx-bar button { flex-shrink: 0; padding: 7px 12px; border-radius: 8px; background: var(--surface-2); color: var(--ink); font-size: 0.82rem; font-weight: 600; }
+.ctx-bar button.danger { color: var(--danger); }
+.modal .row { flex-wrap: wrap; }
+.modal .row button { min-width: 30%; }

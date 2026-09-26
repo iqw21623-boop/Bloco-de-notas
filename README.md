@@ -40,4 +40,9 @@ Tudo é salvo no `localStorage` do navegador, neste dispositivo. Não há conta,
 - Exportar todas as anotações para um arquivo `.json` e importar de volta, com confirmação antes de sobrescrever anotações existentes.
 - Funciona 100% offline, sem conta e sem internet.
 - Menu lateral para navegar entre Todas, Favoritas, Fixadas, Arquivadas, Lixeira e Configurações.
+- Tabelas no editor (linhas × colunas), com barra para adicionar/remover linhas e colunas e apagar a tabela.
+- Bloco de código (fonte monoespaçada, com botão de copiar) e código em linha.
+- Exportar a anotação atual em `.txt`, `.md`, `.html` ou `.json` (menu ⋮ do editor).
+- Colar sempre como texto puro; conteúdo importado é higienizado (sem scripts).
+- Service worker "rede primeiro": atualizações aparecem sem limpar cache.
 - Identidade visual própria: paleta "tinta sobre papel", tipografia serifada para leitura/escrita e sem elementos genéricos de outros apps.
